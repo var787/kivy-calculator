@@ -109,7 +109,7 @@ class Calculator(GridLayout):
             self.update_display()
 
     def append_decimal(self):
-        if self.expression and self.expression[-1] != "." and self.expression[-1] not in "+-*/":
+        if self.expression and self.expression[-1] != "." and self.expression[-1] not in "+-*/":  # noqa
             self.expression += "."
             self.update_display()
 
